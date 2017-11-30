@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F66956F1FD070C6008FD7D3 /* DataOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66956E1FD070C6008FD7D3 /* DataOrganizer.swift */; };
 		9FCBD8C21FCFFE2A0017BD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8C11FCFFE2A0017BD35 /* AppDelegate.swift */; };
 		9FCBD8C41FCFFE2A0017BD35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8C31FCFFE2A0017BD35 /* ViewController.swift */; };
 		9FCBD8C71FCFFE2A0017BD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCBD8C51FCFFE2A0017BD35 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9FCBD8CC1FCFFE2A0017BD35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCBD8CA1FCFFE2A0017BD35 /* LaunchScreen.storyboard */; };
 		9FCBD8D71FCFFE2A0017BD35 /* Mphasis_ISSP_NajmulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8D61FCFFE2A0017BD35 /* Mphasis_ISSP_NajmulTests.swift */; };
 		9FCBD8E21FCFFE2A0017BD35 /* Mphasis_ISSP_NajmulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8E11FCFFE2A0017BD35 /* Mphasis_ISSP_NajmulUITests.swift */; };
+		9FCBD8F11FD05F1A0017BD35 /* ISSPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8F01FD05F1A0017BD35 /* ISSPCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F66956E1FD070C6008FD7D3 /* DataOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOrganizer.swift; sourceTree = "<group>"; };
 		9FCBD8BE1FCFFE2A0017BD35 /* Mphasis_ISSP_Najmul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mphasis_ISSP_Najmul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCBD8C11FCFFE2A0017BD35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCBD8C31FCFFE2A0017BD35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		9FCBD8DD1FCFFE2A0017BD35 /* Mphasis_ISSP_NajmulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mphasis_ISSP_NajmulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCBD8E11FCFFE2A0017BD35 /* Mphasis_ISSP_NajmulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mphasis_ISSP_NajmulUITests.swift; sourceTree = "<group>"; };
 		9FCBD8E31FCFFE2A0017BD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCBD8F01FD05F1A0017BD35 /* ISSPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		9FCBD8C01FCFFE2A0017BD35 /* Mphasis_ISSP_Najmul */ = {
 			isa = PBXGroup;
 			children = (
+				9FCBD8F21FD06B890017BD35 /* Lib */,
+				9FCBD8EF1FD05EF50017BD35 /* Cell */,
 				9FCBD8C11FCFFE2A0017BD35 /* AppDelegate.swift */,
 				9FCBD8C31FCFFE2A0017BD35 /* ViewController.swift */,
 				9FCBD8C51FCFFE2A0017BD35 /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				9FCBD8E31FCFFE2A0017BD35 /* Info.plist */,
 			);
 			path = Mphasis_ISSP_NajmulUITests;
+			sourceTree = "<group>";
+		};
+		9FCBD8EF1FD05EF50017BD35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9FCBD8F01FD05F1A0017BD35 /* ISSPCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9FCBD8F21FD06B890017BD35 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				9F66956E1FD070C6008FD7D3 /* DataOrganizer.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCBD8F11FD05F1A0017BD35 /* ISSPCell.swift in Sources */,
+				9F66956F1FD070C6008FD7D3 /* DataOrganizer.swift in Sources */,
 				9FCBD8C41FCFFE2A0017BD35 /* ViewController.swift in Sources */,
 				9FCBD8C21FCFFE2A0017BD35 /* AppDelegate.swift in Sources */,
 			);

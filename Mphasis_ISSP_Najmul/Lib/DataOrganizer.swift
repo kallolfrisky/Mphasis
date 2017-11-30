@@ -9,7 +9,8 @@
 import Foundation
 
 class DataOrganizer: NSObject {
-    
+
+    //Formate timestap to human readable date
    public static func formateDateFromTimeStamp(_ timeStamp: Double)-> String{
         
         let date = Date(timeIntervalSince1970: timeStamp)
@@ -22,6 +23,7 @@ class DataOrganizer: NSObject {
         return strDate
     }
     
+    //Formate time interval to MM:SS rather than raw seconds
     public static func formateDuration(_ duration: Double)-> String{
         
         let formatter = DateComponentsFormatter()
