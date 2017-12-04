@@ -15,9 +15,8 @@ class DataOrganizer: NSObject {
         
         let date = Date(timeIntervalSince1970: timeStamp)
         let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT") //Set timezone that we want
         dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = "MMM dd, yyyy     HH:mm" //Specify format that is needed
+        dateFormatter.dateStyle = .full // For localization support
         let strDate = dateFormatter.string(from: date)
         
         return strDate

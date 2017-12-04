@@ -86,7 +86,7 @@
                             <constraint firstItem="eMf-ng-JYL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LWV-kR-OdX"/>
                             <constraint firstItem="eMf-ng-JYL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N7V-il-AmQ"/>
                             <constraint firstItem="eMf-ng-JYL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nyb-34-N0O"/>
-                            <constraint firstAttribute="trailing" secondItem="eMf-ng-JYL" secondAttribute="trailing" id="ZDI-Xa-ycc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eMf-ng-JYL" secondAttribute="trailing" id="ZDI-Xa-ycc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

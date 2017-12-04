@@ -85,7 +85,9 @@ class ViewController: UIViewController {
                 // Get the results array
                 if response ["message"] as! String == "success" { //Check if it got the success message
                     if let array: AnyObject = response["response"] {
-                        passTimes = array as! [AnyObject]
+                        let pTimes = array as! [AnyObject]
+                        passTimes = pTimes.map({ PassTimeObject.init(with: $0) })
+                        
                     } else {
                         print("Results key not found in dictionary")
                     }
@@ -120,12 +122,16 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ISSPCell", for: indexPath) as! ISSPCell
         
-        let passTime = passTimes [indexPath.row] as? [String : Any]
-        let duration = passTime!["duration"] as! Double
-        let riseTime = passTime!["risetime"] as! Double
+        let passTime = passTimes [indexPath.row] as? PassTimeObject
         
-        cell.durationLabel.text = String.init(format: "Duration: \(DataOrganizer.formateDuration(duration))")
-        cell.risetimeLabel.text = String.init(format: "Date: \(DataOrganizer.formateDateFromTimeStamp(riseTime))")
+//        cell.durationLabel.text = "Duration: " + (passTime?.duration)!
+//         cell.risetimeLabel.text = "Date: " + (passTime?.risetime)!
+        
+        let dFormat = NSLocalizedString("Duration: %@", comment: "Duration of the pass") //Localization support
+        cell.durationLabel.text = String.localizedStringWithFormat(dFormat, (passTime?.duration)!)
+        
+        let rFormat = NSLocalizedString("Date: %@", comment: "Date of the pass") //Localization support
+        cell.risetimeLabel.text = String.localizedStringWithFormat(rFormat, (passTime?.risetime)!)
         
         return cell
     }
