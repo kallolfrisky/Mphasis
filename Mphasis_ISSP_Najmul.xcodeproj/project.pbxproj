@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F0B0FB21FD5B70000C5A461 /* PassTimeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B0FB11FD5B70000C5A461 /* PassTimeObject.swift */; };
+		9F2096E51FF2502700781DD1 /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096E41FF2502700781DD1 /* RemoteService.swift */; };
 		9F66956F1FD070C6008FD7D3 /* DataOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66956E1FD070C6008FD7D3 /* DataOrganizer.swift */; };
 		9FCBD8C21FCFFE2A0017BD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8C11FCFFE2A0017BD35 /* AppDelegate.swift */; };
 		9FCBD8C41FCFFE2A0017BD35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD8C31FCFFE2A0017BD35 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		9F0B0FB11FD5B70000C5A461 /* PassTimeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassTimeObject.swift; sourceTree = "<group>"; };
+		9F2096E41FF2502700781DD1 /* RemoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 		9F66956E1FD070C6008FD7D3 /* DataOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOrganizer.swift; sourceTree = "<group>"; };
 		9FCBD8BE1FCFFE2A0017BD35 /* Mphasis_ISSP_Najmul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mphasis_ISSP_Najmul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCBD8C11FCFFE2A0017BD35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9F2096E31FF2502700781DD1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F2096E41FF2502700781DD1 /* RemoteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9FCBD8B51FCFFE2A0017BD35 = {
 			isa = PBXGroup;
 			children = (
@@ -111,9 +121,10 @@
 		9FCBD8C01FCFFE2A0017BD35 /* Mphasis_ISSP_Najmul */ = {
 			isa = PBXGroup;
 			children = (
+				9F2096E31FF2502700781DD1 /* Services */,
 				9F0B0FB01FD5B6E600C5A461 /* Models */,
 				9FCBD8F21FD06B890017BD35 /* Lib */,
-				9FCBD8EF1FD05EF50017BD35 /* Cell */,
+				9FCBD8EF1FD05EF50017BD35 /* Views */,
 				9FCBD8C11FCFFE2A0017BD35 /* AppDelegate.swift */,
 				9FCBD8C31FCFFE2A0017BD35 /* ViewController.swift */,
 				9FCBD8C51FCFFE2A0017BD35 /* Main.storyboard */,
@@ -142,12 +153,12 @@
 			path = Mphasis_ISSP_NajmulUITests;
 			sourceTree = "<group>";
 		};
-		9FCBD8EF1FD05EF50017BD35 /* Cell */ = {
+		9FCBD8EF1FD05EF50017BD35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				9FCBD8F01FD05F1A0017BD35 /* ISSPCell.swift */,
 			);
-			path = Cell;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9FCBD8F21FD06B890017BD35 /* Lib */ = {
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCBD8F11FD05F1A0017BD35 /* ISSPCell.swift in Sources */,
+				9F2096E51FF2502700781DD1 /* RemoteService.swift in Sources */,
 				9F0B0FB21FD5B70000C5A461 /* PassTimeObject.swift in Sources */,
 				9F66956F1FD070C6008FD7D3 /* DataOrganizer.swift in Sources */,
 				9FCBD8C41FCFFE2A0017BD35 /* ViewController.swift in Sources */,
